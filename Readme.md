@@ -1,18 +1,18 @@
-# Shadhin Ovidhan Desktop #
-Shadhin Ovidhan Desktop - Unicode based Open-source Bengali-English-Bengali Dictionary.
+# Shadhin Ovidhan Windows #
+Shadhin Ovidhan Windows - Unicode based Open-source Bengali-English-Bengali Dictionary.
 
 Visit: [http://imaginativeworld.org/products/shadhin-ovidhan/](http://imaginativeworld.org/products/shadhin-ovidhan/ "Imaginative World") for latest version.
 
 
 ## How to compile: ##
 
-This section describes briefly how to compile Shadhin Ovidhan Desktop from source. 
+This section describes briefly how to compile Shadhin Ovidhan Windows from source. 
 
 1. If you need further help regarding codes from Imaginative World, 
 you can contact us at: [http://blog.imaginativeworld.org/feedback](http://blog.imaginativeworld.org/feedback "Imaginative World Feedback")
 
 2. If you need assistance regarding codes from 3rd party
-libraries used in Shadhin Ovidhan Desktop (see below for list), contact respective authors of that library.
+libraries used in Shadhin Ovidhan Windows (see below for list), contact respective authors of that library.
 
 
 ## Required Delphi Version: ##
@@ -82,6 +82,6 @@ Portable wizard need following required files in a sub-folder named "Tools":
 
 ## License ##
 
-From version 2x, Shadhin Ovidhan Desktop goes open source from freeware, licensed under **MOZILLA PUBLIC LICENSE Version 2.0**. You should receive a copy of the license in MPL-2.0.txt file with both binaries and source. An online version of the license can be found at: [http://www.mozilla.org/MPL/](http://www.mozilla.org/MPL/ "http://www.mozilla.org/MPL/")
+From version 2x, Shadhin Ovidhan Windows goes open source from freeware, licensed under **MOZILLA PUBLIC LICENSE Version 2.0**. You should receive a copy of the license in MPL-2.0.txt file with both binaries and source. An online version of the license can be found at: [http://www.mozilla.org/MPL/](http://www.mozilla.org/MPL/ "http://www.mozilla.org/MPL/")
 
 **Copyright © Imaginative World. All Rights Reserved.**
