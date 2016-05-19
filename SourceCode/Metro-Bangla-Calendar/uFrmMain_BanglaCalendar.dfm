@@ -1,0 +1,577 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  AlphaBlend = True
+  AlphaBlendValue = 0
+  BorderIcons = []
+  BorderStyle = bsNone
+  Caption = 'Shadhin Ovidhan | Matro Bangla Calendar'
+  ClientHeight = 184
+  ClientWidth = 150
+  Color = 2763306
+  DoubleBuffered = True
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Icon.Data = {
+    0000010001002020000001002000A81000001600000028000000200000004000
+    0000010020000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000000000000000000000000000000000000000000000000000000000AA
+    679600A1559E00A1529E00A2539E00A1539E00A1539E00A1539E00A1539E00A1
+    529E00A1529E00A1529E00A1539E00A1539E00A2539E00A2549E00A2549E00A3
+    549E00A3549E00A3549E00A3549E00A2549E00A2549E00A1539E00A1539E00A1
+    539E00A1529E00A1529E00A1529E00A1529E00A1529E009F519E00A8659600A8
+    65FC13B374FF18BA7AFF19B779FF19B879FF1AB879FF1AB879FF1AB879FF1AB8
+    7AFF1AB87AFF1AB879FF19B779FF19B778FF18B678FF18B678FF18B678FF18B6
+    78FF18B678FF18B678FF19B778FF19B779FF19B779FF1AB879FF1AB87AFF1AB8
+    7AFF1AB87AFF1AB87AFF1AB87AFF1AB87AFF19B97AFF17B577FF00A866FC02AE
+    69F8C2DDD2FFE4D8DDFFD7D7D7FFD9D8D8FFD9D8D9FFDCDBDBFFE7E6E7FFEEED
+    EDFFE3E3E3FFDDDCDCFFDCDBDBFFDAD9D9FFD7D7D7FFD5D4D4FFD2D2D2FFD1D0
+    D0FFD0D0D0FFD1D0D0FFD2D1D1FFD4D3D3FFD6D5D6FFD8D7D8FFDAD9DAFFDCDB
+    DBFFDDDCDCFFDDDCDCFFDCDCDCFFDCDCDCFFE1D9DCFFE1E9E5FF14B576F802B2
+    6DF2B7CCC3FFFFE2EDFFFDF6F9FFF7F0F3FFFFF8FAFFFFFFFFFFEAE3E6FFD4CE
+    D0FFFCF5F8FFFFFFFFFFFFFBFDFFFDF7F9FFFDF6F9FFFAF4F6FFF8F1F4FFF5EE
+    F1FFF3EDEFFFF2EBEEFFF4EEF0FFFFFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEF7
+    FAFFFBF4F7FFFDF6F9FFFDF7F9FFFDF6F9FFFFE9F1FFD6D9D7FF18B979F201B0
+    6BF2B1CCC1FFFFEBF3FFFFFFFFFFFEFEFEFFFEFEFEFF9C9C9CFF4C4C4CFF4848
+    48FF4D4D4DFFADADADFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFE
+    FEFFFBFBFBFFFFFFFFFFFFFFFFFFD4D4D4FFA6A6A6FF999999FFC2C2C2FFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5FAFFD2DBD7FF15B777F201B0
+    6BF2B0CBC1FFFCE8F0FFFEFEFEFFFFFFFFFFA1A1A1FF434343FFFBFBFBFFF9F9
+    F9FFADADADFF2F2F2FFF919191FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFE
+    FEFFFFFFFFFFFEFEFEFF777777FF303030FF555555FF666666FF3A3A3AFF6B6B
+    6BFFFDFDFDFFFFFFFFFFFBFBFBFFFFFFFFFFFFF2F7FFD2DBD7FF16B777F201B0
+    6BF2B0CBC1FFFCE8F0FFFDFDFDFFFFFFFFFFC2C2C2FF404040FF939393FFECEC
+    ECFFFFFFFFFFDBDBDBFF353535FFCACACAFFFFFFFFFFFEFEFEFFFFFFFFFFFFFF
+    FFFFFBFBFBFF525252FF424242FFCCCCCCFFFFFFFFFFFFFFFFFFECECECFF4747
+    47FF7A7A7AFFFFFFFFFFFCFCFCFFFFFFFFFFFDF0F5FFD1DAD6FF16B777F201B0
+    6BF2B2CCC2FFFCE8F0FFFDFDFDFFF7F7F7FFFFFFFFFFBDBDBDFF3B3B3BFFA3A3
+    A3FFFFFFFFFFFFFFFFFF797979FF7A7A7AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFF747474FF424242FFF4F4F4FFFFFFFFFFFEFEFEFFF7F7F7FFFFFFFFFFD4D4
+    D4FF3B3B3BFFD6D6D6FFFFFFFFFFFFFFFFFFFAEDF2FFCED8D4FF15B677F201B0
+    6BF2B5D0C6FFFEEBF2FFFDFDFDFFF3F3F3FFF6F6F6FFFFFFFFFFFFFFFFFFF6F6
+    F6FFF7F7F7FFFFFFFFFF9F9F9FFF666666FFFFFFFFFFFFFFFFFFFFFFFFFFC0C0
+    C0FF2B2B2BFFE2E2E2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFEFFFFFF
+    FFFF646464FF979797FFFFFFFFFFFCFCFCFFF7EAEFFFCBD4D1FF15B677F201B0
+    6BF2B9D4C9FFFFEFF6FFFFFFFFFFF6F6F6FFF4F4F4FFF4F4F4FFF9F9F9FFF8F8
+    F8FFF7F7F7FFFFFFFFFF818181FF7C7C7CFFFFFFFFFFFFFFFFFFFFFFFFFF5858
+    58FF868686FFFFFFFFFFFFFFFFFFE6E6E6FFCDCDCDFFFFFFFFFFFFFFFFFFFFFF
+    FFFF7E7E7EFF7B7B7BFFFFFFFFFFFDFDFDFFF5E7EDFFC8D1CEFF15B676F201B0
+    6BF2BBD6CCFFFFF2FAFFFFFFFFFFF9F9F9FFF7F7F7FFF5F5F5FFF5F5F5FFF3F3
+    F3FFFFFFFFFFEBEBEBFF383838FFB7B7B7FFFFFFFFFFFFFFFFFFD0D0D0FF3C3C
+    3CFFDFDFDFFFFFFFFFFFCBCBCBFF3E3E3EFF464646FF515151FFCFCFCFFFFFFF
+    FFFF797979FF848484FFFFFFFFFFFCFCFCFFF4E6ECFFC6CFCCFF14B576F201B0
+    6BF2BAD5CAFFFFF4FCFFFFFFFFFFFDFDFDFFFBFBFBFFF8F8F8FFF5F5F5FFFFFF
+    FFFFFFFFFFFF555555FF5C5C5CFFFCFCFCFFFCFCFCFFFFFFFFFF919191FF6565
+    65FFFFFFFFFFFFFFFFFF747474FF6E6E6EFFF3F3F3FF8D8D8DFF434343FFD3D3
+    D3FF636363FFBEBEBEFFFFFFFFFFFEFEFEFFF5E8EDFFC6CFCBFF14B576F200AF
+    6AF2B3CEC4FFFFF0F8FFFFFFFFFFFFFFFFFFFEFEFEFFFDFDFDFFFFFFFFFFF9F9
+    F9FF585858FF3B3B3BFFEAEAEAFFFFFFFFFFF8F8F8FFFFFFFFFF626262FF8C8C
+    8CFFFFFFFFFFFAFAFAFF515151FFADADADFFFFFFFFFFFFFFFFFF636363FF1B1B
+    1BFF737373FFFEFEFEFFFFFFFFFFFFFFFFFFF9EBF1FFC8D1CDFF14B576F201B0
+    6BF2AFCABFFFFDE8F0FFFFFFFFFFFEFEFEFFFFFFFFFFFFFFFFFFE7E7E7FF4040
+    40FF4E4E4EFFEEEEEEFFFFFFFFFFF4F4F4FFFCFCFCFFF7F7F7FF686868FFB3B3
+    B3FFFFFFFFFFE9E9E9FF4F4F4FFFB7B7B7FFFFFFFFFFFFFFFFFFDEDEDEFF8080
+    80FFEDEDEDFFFFFFFFFFFFFFFFFFFFFFFFFFFCEFF4FFCCD4D1FF14B676F201B0
+    6BF2B1CCC2FFFBE7EEFFFCFCFCFFF8F8F8FFFFFFFFFFD6D6D6FF333333FF8383
+    83FFFFFFFFFFFFFFFFFFF5F5F5FFF5F5F5FFF4F4F4FFF5F5F5FFF7F7F7FFF6F6
+    F6FFFFFFFFFFE8E8E8FF4B4B4BFFB9B9B9FFFFFFFFFFFBFBFBFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFEFEFEFFFFFFFFFFFFFFFFFFFFF1F7FFCFD8D5FF15B676F201B0
+    6BF2B6D1C6FFFEEBF3FFFCFCFCFFFDFDFDFFE3E3E3FF4B4B4BFF9F9F9FFFFFFF
+    FFFFFFFFFFFFFCFCFCFFFBFBFBFFF8F8F8FFF5F5F5FFF4F4F4FFFAFAFAFFF8F8
+    F8FFFFFFFFFFCDCDCDFF363636FFC6C6C6FFFFFFFFFFFAFAFAFFFBFBFBFFFBFB
+    FBFFFDFDFDFFFEFEFEFFFEFEFEFFFFFFFFFFFFF2F7FFD2DBD7FF15B677F201B0
+    6BF2BAD5CAFFFFF0F8FFFFFFFFFFFFFFFFFF959595FF414141FFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFEFEFEFFFCFCFCFFFAFAFAFFF7F7F7FFF5F5F5FFFFFF
+    FFFFBDBDBDFF282828FF8B8B8BFFFBFBFBFFFBFBFBFFF8F8F8FFF9F9F9FFFBFB
+    FBFFFBFBFBFFFCFCFCFFFEFEFEFFFFFFFFFFFFF1F7FFD2DBD7FF16B777F201B0
+    6BF2BBD6CBFFFFFAFFFFFFFFFFFFFFFFFFFFD3D3D3FFA8A8A8FFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFE4E4E4FFC6C6C6FFFFFFFFFFFFFFFFFFFEFEFEFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF9FEFFD1DAD6FF15B676F203B2
+    6DF2B9D4CAFFECDCE5FFE1E1E1FFE0E0E0FFE9E9E9FFF2F2F2FFDADADAFFD7D7
+    D7FFD7D7D7FFDBDBDBFFE2E2E2FFE3E3E3FFE3E3E3FFE3E3E3FFDFDFDFFFDADA
+    DAFFE5E5E5FFEFEFEFFFDADADAFFD9D9D9FFD8D8D8FFD8D8D8FFDBDBDBFFDBDB
+    DBFFDBDBDBFFDEDEDEFFDEDEDEFFE1E1E1FFE4D5DBFFCCD5D2FF18B97AF202AC
+    68F2D3EDE3FFE8E1E3FFEDE9EBFFE9E6E7FFE0E0E0FFEBE7E9FFE2DFE1FFD5D5
+    D5FFDEDBDCFFDAD7D8FFD1D1D1FFE5E2E3FFE8E5E6FFDFDFDFFFEBE8E9FFE9E5
+    E7FFDADADAFFE1DEDFFFDFDCDDFFD1D1D1FFDCD9DAFFDDDADBFFD2D2D2FFDEDB
+    DCFFE2DEE0FFD4D4D4FFE0DDDEFFE6E2E4FFE1DDDFFFE8EFEDFF12B374F200AC
+    67F7D3EAE1FFFCEDF3FFFFFFFFFFFFFFFFFFE4E4E4FFFFFFFFFFFFFFFFFFE3E2
+    E3FFFFFAFDFFFFFEFFFFE0E0E0FFFDF5F8FFFFFFFFFFE4E4E4FFFFFFFFFFFFFF
+    FFFFE3E3E3FFFFFFFFFFFFFFFFFFE1E1E1FFFFF8FBFFFFF9FCFFDFDFDFFFFCF5
+    F8FFFFFCFFFFE3E3E3FFFAF4F7FFFFFFFFFFF7EBF0FFE7ECEAFF11B273F700A2
+    53FF63D3A7FFFFFFFFFF1AB775FF55D2A1FFFFFFFFFF1BB878FF3FCF96FFFFFF
+    FFFF32C68CFF35CD91FFFFFFFFFF31C48AFF32CB8FFFFFFFFFFF36C68DFF29C5
+    87FFFFFFFFFF3FCC95FF28C587FFFFFFFFFF3ECB93FF28C586FFFFFFFFFF41C6
+    92FF1AB874FFFFFFFFFF62D1A5FF19B770FFFFFFFFFF72D4ADFF02A455FF0099
+    4E274A907474F4DAEAFF005A2B292F906A5FF6DBECFF0062322B168A5C48F7E4
+    F2FF087248410D7B5040F7E6F4FF087348410E7C5040F7E4F3FF0B794D440078
+    4938F7E3F2FF1577504C00714336F7E4F3FF1677514C00744537F6DDEDFF1780
+    574F00693429F6DEEEFF3B8F6E6D005B2929F5E0EEFF518B7480009248270000
+    000037433F0B8E707C7B00000000000000008E707C7B00000000000000009177
+    837D0000000000000000917A867D00000000000000009178847D000000000000
+    00009178857C0000000000000000917A877C00000000000000008D707D7A0000
+    0000000000009274807B23423607000000009276827B2E363314000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000009B6DB6C9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  Padding.Left = 2
+  Padding.Top = 2
+  Padding.Right = 2
+  Padding.Bottom = 2
+  OldCreateOrder = False
+  Scaled = False
+  Visible = True
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnMouseDown = FormMouseDown
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object spBG: TShape
+    Left = 2
+    Top = 2
+    Width = 147
+    Height = 181
+    Pen.Style = psClear
+    Pen.Width = 0
+  end
+  object lblDay: TLabel
+    Left = 2
+    Top = 7
+    Width = 146
+    Height = 90
+    Alignment = taCenter
+    AutoSize = False
+    Caption = #2536#2536
+    Color = 14606046
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -73
+    Font.Name = 'Siyam Rupali'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    PopupMenu = pMenuMain
+    Transparent = False
+    Layout = tlCenter
+    OnMouseDown = FormMouseDown
+  end
+  object lblMonth: TLabel
+    Left = 2
+    Top = 97
+    Width = 146
+    Height = 40
+    Alignment = taCenter
+    AutoSize = False
+    Caption = #2437#2455#2509#2480#2489#2494#2527#2467
+    Color = clWhite
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Siyam Rupali'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    PopupMenu = pMenuMain
+    Transparent = False
+    Layout = tlCenter
+    OnMouseDown = FormMouseDown
+  end
+  object lblYear: TLabel
+    Left = 2
+    Top = 137
+    Width = 146
+    Height = 40
+    Alignment = taCenter
+    AutoSize = False
+    Caption = #2537#2537#2537#2537
+    Color = 14606046
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clBlack
+    Font.Height = -21
+    Font.Name = 'Siyam Rupali'
+    Font.Style = []
+    ParentColor = False
+    ParentFont = False
+    PopupMenu = pMenuMain
+    Transparent = False
+    Layout = tlCenter
+    OnMouseDown = FormMouseDown
+  end
+  object pMenuMain: TPopupMenu
+    Left = 16
+    Top = 70
+    object miAutoStart: TMenuItem
+      Caption = 'Auto start with Windows'
+      OnClick = miAutoStartClick
+    end
+    object miLockGadget: TMenuItem
+      Caption = 'Lock Gadget'
+      OnClick = miLockGadgetClick
+    end
+    object miTheme: TMenuItem
+      Caption = 'Theme []'
+      object miDefault: TMenuItem
+        AutoCheck = True
+        Caption = 'Default'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miRandom: TMenuItem
+        AutoCheck = True
+        Caption = 'Random'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miUserDefine: TMenuItem
+        Caption = 'User Defined'
+        RadioItem = True
+        OnClick = miUserDefineClick
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object miWhite: TMenuItem
+        AutoCheck = True
+        Caption = 'White'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miSilver: TMenuItem
+        AutoCheck = True
+        Caption = 'Silver'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object Gray: TMenuItem
+        AutoCheck = True
+        Caption = 'Gray'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object Black1: TMenuItem
+        AutoCheck = True
+        Caption = 'Black'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miGreen: TMenuItem
+        AutoCheck = True
+        Caption = 'Green'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miLightGreen: TMenuItem
+        AutoCheck = True
+        Caption = 'Light Green'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miBlue: TMenuItem
+        AutoCheck = True
+        Caption = 'Blue'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miSkyBlue: TMenuItem
+        AutoCheck = True
+        Caption = 'Sky Blue'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miLightSkyBlue: TMenuItem
+        AutoCheck = True
+        Caption = 'Light Sky Blue'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miYellow: TMenuItem
+        AutoCheck = True
+        Caption = 'Yellow'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miPurple: TMenuItem
+        AutoCheck = True
+        Caption = 'Purple'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miLightPurple: TMenuItem
+        AutoCheck = True
+        Caption = 'Light Purple'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miTeal: TMenuItem
+        AutoCheck = True
+        Caption = 'Teal'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miLightTeal: TMenuItem
+        AutoCheck = True
+        Caption = 'Light Teal'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miRed: TMenuItem
+        AutoCheck = True
+        Caption = 'Red'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miRed2: TMenuItem
+        AutoCheck = True
+        Caption = 'Red 2'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miRed3: TMenuItem
+        AutoCheck = True
+        Caption = 'Red 3'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object miRed4: TMenuItem
+        AutoCheck = True
+        Caption = 'Red 4'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object Maroon1: TMenuItem
+        AutoCheck = True
+        Caption = 'Maroon'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object Love1: TMenuItem
+        AutoCheck = True
+        Caption = 'Love'
+        RadioItem = True
+        OnClick = ThemeMiClick
+      end
+      object N5: TMenuItem
+        Caption = '-'
+      end
+      object miRongdhonu: TMenuItem
+        AutoCheck = True
+        Caption = 'Rongdhonu'
+        RadioItem = True
+        OnClick = miRongdhonuClick
+      end
+      object miRongdhonuSpeed: TMenuItem
+        Caption = 'Rongdhonu Speed'
+        object miSlow: TMenuItem
+          AutoCheck = True
+          Caption = 'Slow'
+          RadioItem = True
+          OnClick = miSpeedsClick
+        end
+        object miNormal: TMenuItem
+          AutoCheck = True
+          Caption = 'Normal'
+          RadioItem = True
+          OnClick = miSpeedsClick
+        end
+        object miFast: TMenuItem
+          AutoCheck = True
+          Caption = 'Fast'
+          RadioItem = True
+          OnClick = miSpeedsClick
+        end
+      end
+    end
+    object miFont: TMenuItem
+      Caption = 'Font []'
+      object miKalpurush: TMenuItem
+        Caption = 'Kalpurush'
+        RadioItem = True
+        OnClick = miDefaultFonts
+      end
+      object miNirmalaUI: TMenuItem
+        Caption = 'Nirmala UI'
+        RadioItem = True
+        OnClick = miDefaultFonts
+      end
+      object miSiyamRupali: TMenuItem
+        Caption = 'Siyam Rupali'
+        RadioItem = True
+        OnClick = miDefaultFonts
+      end
+    end
+    object miAlphaBlind: TMenuItem
+      Caption = 'Transparent []'
+      object mi10: TMenuItem
+        AutoCheck = True
+        Caption = '10%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi20: TMenuItem
+        AutoCheck = True
+        Caption = '20%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi30: TMenuItem
+        AutoCheck = True
+        Caption = '30%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi40: TMenuItem
+        AutoCheck = True
+        Caption = '40%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi50: TMenuItem
+        AutoCheck = True
+        Caption = '50%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi60: TMenuItem
+        AutoCheck = True
+        Caption = '60%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi70: TMenuItem
+        AutoCheck = True
+        Caption = '70%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi80: TMenuItem
+        AutoCheck = True
+        Caption = '80%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi90: TMenuItem
+        AutoCheck = True
+        Caption = '90%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+      object mi100: TMenuItem
+        AutoCheck = True
+        Caption = '100%'
+        RadioItem = True
+        OnClick = miTransparent
+      end
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object Info1: TMenuItem
+      Caption = 'Metro Bangla Calendar'
+      Enabled = False
+    end
+    object Calendarmaintainruleof1: TMenuItem
+      Caption = '  '#9679' Calendar maintain rule of:'
+      Enabled = False
+    end
+    object Bangladesh1: TMenuItem
+      Caption = '      Bangladesh'
+      Enabled = False
+    end
+    object hisProductcomeswith1: TMenuItem
+      Caption = '  '#9679' This Gadget comes with:'
+      Enabled = False
+    end
+    object ShadhinOvidhan1: TMenuItem
+      Caption = '      Shadhin Ovidhan'
+      Enabled = False
+    end
+    object mnuIW: TMenuItem
+      Caption = 'A product of Imaginative World'
+      OnClick = mnuIWClick
+    end
+    object N4: TMenuItem
+      Caption = '-'
+    end
+    object miAbout: TMenuItem
+      Caption = 'About'
+      OnClick = miAboutClick
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object miExit: TMenuItem
+      Caption = 'Exit'
+      OnClick = miExitClick
+    end
+  end
+  object tmrUpdate: TTimer
+    Interval = 3600000
+    OnTimer = tmrUpdateTimer
+    Left = 16
+    Top = 120
+  end
+  object tmrDate: TTimer
+    Enabled = False
+    Interval = 60000
+    OnTimer = tmrDateTimer
+    Left = 16
+    Top = 16
+  end
+  object tmrStartEffect: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = tmrStartEffectTimer
+    Left = 104
+    Top = 16
+  end
+  object ColorDialog: TColorDialog
+    OnShow = ColorDialogShow
+    Options = [cdFullOpen]
+    Left = 96
+    Top = 120
+  end
+  object tmrColor: TTimer
+    Enabled = False
+    OnTimer = tmrColorTimer
+    Left = 96
+    Top = 72
+  end
+end

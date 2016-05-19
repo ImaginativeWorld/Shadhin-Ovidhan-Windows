@@ -1,0 +1,105 @@
+@charset "utf-8";
+body {
+	font-family: "Nirmala UI", "Siyam Rupali";
+	background-color: #F0F0F0;
+	margin: 5px;
+	color: #666;
+	border: none;
+	overflow: auto;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+h1 {
+	font-size: 18px;
+	color: #555;
+	background-color: #E1E1E1;
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+p {
+	padding-left: 10px;
+	margin-top: -5px;
+	font-size: 16px;
+	padding-right: 10px;
+	text-align: left;
+}
+.ImageS {
+	background-position: center center;
+	margin-left: 15%;
+}
+a {
+	font-weight: normal;
+	text-decoration: none;
+	color: #67AA00;
+}
+a:hover {
+	color: #508400;
+	text-decoration:underline;
+}
+body p a {
+	text-align: center;
+}
+h2 {
+	font-size: 16px;
+	padding-left: 10px;
+	background-color: #EBEBEB;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	color: #09F;
+	width: 50%;
+	margin-left: 25px;
+	border-radius: 10px;
+}
+h3 {
+	font-size: 14px;
+	margin-top: -5px;
+	margin-left: 25px;
+	color: #666;
+}
+img {
+	border: 5px solid #E6E6E6;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #FFF;
+	alignment-baseline: middle;
+	alignment-adjust: middle;
+	height: auto;
+	width: auto;
+	margin: 10px;
+}
+h4 {
+	margin-left: 10px;
+	color: #FFF;
+	background-color: #999;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	margin-right: 10px;
+}
+.imgP {
+	text-align: center;
+}
+.TimeLine1 {
+	text-align: right;
+}
+.TableCenter {
+	text-align: center;
+}
+.TableJuktakkhor {
+	font-size: 18px;
+	font-family: "Kalpurush", "Siyam Rupali";
+	text-align: center;
+}
+ul h3 {
+	margin-left: 0px;
+}

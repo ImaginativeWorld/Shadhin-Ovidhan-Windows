@@ -1,0 +1,204 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{2BB10096-D7F6-489F-9FBB-E816BB58AFCA}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="ShadhinOvidhan\ShadhinOvidhan.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SODashboard\SOIntegrator.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOCommon\SOCommon.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SO99NamesOfAllah\SO99NamesOfAllah.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="BiologicalScientificNames\SOScientificNames.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOAbbreviation\SOAbbreviation.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOGreekLetters\SOGreekLetter.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOGTranslate\SOGTranslate.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOPortableLauncher\Shadhin_Ovidhan_Launcher.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOPortableWizard\SOPortableWizard.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOHelp\SOHelp.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SONews\SONews.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOFeedback\SOFeedback.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="SOBanglaAidKit\SOBanglaAidKit.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Metro-Bangla-Calendar\SOBanglaCalendar.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ShadhinOvidhan">
+			<MSBuild Projects="ShadhinOvidhan\ShadhinOvidhan.dproj"/>
+		</Target>
+		<Target Name="ShadhinOvidhan:Clean">
+			<MSBuild Targets="Clean" Projects="ShadhinOvidhan\ShadhinOvidhan.dproj"/>
+		</Target>
+		<Target Name="ShadhinOvidhan:Make">
+			<MSBuild Targets="Make" Projects="ShadhinOvidhan\ShadhinOvidhan.dproj"/>
+		</Target>
+		<Target Name="SOIntegrator">
+			<MSBuild Projects="SODashboard\SOIntegrator.dproj"/>
+		</Target>
+		<Target Name="SOIntegrator:Clean">
+			<MSBuild Targets="Clean" Projects="SODashboard\SOIntegrator.dproj"/>
+		</Target>
+		<Target Name="SOIntegrator:Make">
+			<MSBuild Targets="Make" Projects="SODashboard\SOIntegrator.dproj"/>
+		</Target>
+		<Target Name="SOCommon">
+			<MSBuild Projects="SOCommon\SOCommon.dproj"/>
+		</Target>
+		<Target Name="SOCommon:Clean">
+			<MSBuild Targets="Clean" Projects="SOCommon\SOCommon.dproj"/>
+		</Target>
+		<Target Name="SOCommon:Make">
+			<MSBuild Targets="Make" Projects="SOCommon\SOCommon.dproj"/>
+		</Target>
+		<Target Name="SO99NamesOfAllah">
+			<MSBuild Projects="SO99NamesOfAllah\SO99NamesOfAllah.dproj"/>
+		</Target>
+		<Target Name="SO99NamesOfAllah:Clean">
+			<MSBuild Targets="Clean" Projects="SO99NamesOfAllah\SO99NamesOfAllah.dproj"/>
+		</Target>
+		<Target Name="SO99NamesOfAllah:Make">
+			<MSBuild Targets="Make" Projects="SO99NamesOfAllah\SO99NamesOfAllah.dproj"/>
+		</Target>
+		<Target Name="SOScientificNames">
+			<MSBuild Projects="BiologicalScientificNames\SOScientificNames.dproj"/>
+		</Target>
+		<Target Name="SOScientificNames:Clean">
+			<MSBuild Targets="Clean" Projects="BiologicalScientificNames\SOScientificNames.dproj"/>
+		</Target>
+		<Target Name="SOScientificNames:Make">
+			<MSBuild Targets="Make" Projects="BiologicalScientificNames\SOScientificNames.dproj"/>
+		</Target>
+		<Target Name="SOAbbreviation">
+			<MSBuild Projects="SOAbbreviation\SOAbbreviation.dproj"/>
+		</Target>
+		<Target Name="SOAbbreviation:Clean">
+			<MSBuild Targets="Clean" Projects="SOAbbreviation\SOAbbreviation.dproj"/>
+		</Target>
+		<Target Name="SOAbbreviation:Make">
+			<MSBuild Targets="Make" Projects="SOAbbreviation\SOAbbreviation.dproj"/>
+		</Target>
+		<Target Name="SOGreekLetter">
+			<MSBuild Projects="SOGreekLetters\SOGreekLetter.dproj"/>
+		</Target>
+		<Target Name="SOGreekLetter:Clean">
+			<MSBuild Targets="Clean" Projects="SOGreekLetters\SOGreekLetter.dproj"/>
+		</Target>
+		<Target Name="SOGreekLetter:Make">
+			<MSBuild Targets="Make" Projects="SOGreekLetters\SOGreekLetter.dproj"/>
+		</Target>
+		<Target Name="SOGTranslate">
+			<MSBuild Projects="SOGTranslate\SOGTranslate.dproj"/>
+		</Target>
+		<Target Name="SOGTranslate:Clean">
+			<MSBuild Targets="Clean" Projects="SOGTranslate\SOGTranslate.dproj"/>
+		</Target>
+		<Target Name="SOGTranslate:Make">
+			<MSBuild Targets="Make" Projects="SOGTranslate\SOGTranslate.dproj"/>
+		</Target>
+		<Target Name="Shadhin_Ovidhan_Launcher">
+			<MSBuild Projects="SOPortableLauncher\Shadhin_Ovidhan_Launcher.dproj"/>
+		</Target>
+		<Target Name="Shadhin_Ovidhan_Launcher:Clean">
+			<MSBuild Targets="Clean" Projects="SOPortableLauncher\Shadhin_Ovidhan_Launcher.dproj"/>
+		</Target>
+		<Target Name="Shadhin_Ovidhan_Launcher:Make">
+			<MSBuild Targets="Make" Projects="SOPortableLauncher\Shadhin_Ovidhan_Launcher.dproj"/>
+		</Target>
+		<Target Name="SOPortableWizard">
+			<MSBuild Projects="SOPortableWizard\SOPortableWizard.dproj"/>
+		</Target>
+		<Target Name="SOPortableWizard:Clean">
+			<MSBuild Targets="Clean" Projects="SOPortableWizard\SOPortableWizard.dproj"/>
+		</Target>
+		<Target Name="SOPortableWizard:Make">
+			<MSBuild Targets="Make" Projects="SOPortableWizard\SOPortableWizard.dproj"/>
+		</Target>
+		<Target Name="SOHelp">
+			<MSBuild Projects="SOHelp\SOHelp.dproj"/>
+		</Target>
+		<Target Name="SOHelp:Clean">
+			<MSBuild Targets="Clean" Projects="SOHelp\SOHelp.dproj"/>
+		</Target>
+		<Target Name="SOHelp:Make">
+			<MSBuild Targets="Make" Projects="SOHelp\SOHelp.dproj"/>
+		</Target>
+		<Target Name="SONews">
+			<MSBuild Projects="SONews\SONews.dproj"/>
+		</Target>
+		<Target Name="SONews:Clean">
+			<MSBuild Targets="Clean" Projects="SONews\SONews.dproj"/>
+		</Target>
+		<Target Name="SONews:Make">
+			<MSBuild Targets="Make" Projects="SONews\SONews.dproj"/>
+		</Target>
+		<Target Name="SOFeedback">
+			<MSBuild Projects="SOFeedback\SOFeedback.dproj"/>
+		</Target>
+		<Target Name="SOFeedback:Clean">
+			<MSBuild Targets="Clean" Projects="SOFeedback\SOFeedback.dproj"/>
+		</Target>
+		<Target Name="SOFeedback:Make">
+			<MSBuild Targets="Make" Projects="SOFeedback\SOFeedback.dproj"/>
+		</Target>
+		<Target Name="SOBanglaAidKit">
+			<MSBuild Projects="SOBanglaAidKit\SOBanglaAidKit.dproj"/>
+		</Target>
+		<Target Name="SOBanglaAidKit:Clean">
+			<MSBuild Targets="Clean" Projects="SOBanglaAidKit\SOBanglaAidKit.dproj"/>
+		</Target>
+		<Target Name="SOBanglaAidKit:Make">
+			<MSBuild Targets="Make" Projects="SOBanglaAidKit\SOBanglaAidKit.dproj"/>
+		</Target>
+		<Target Name="SOBanglaCalendar">
+			<MSBuild Projects="Metro-Bangla-Calendar\SOBanglaCalendar.dproj"/>
+		</Target>
+		<Target Name="SOBanglaCalendar:Clean">
+			<MSBuild Targets="Clean" Projects="Metro-Bangla-Calendar\SOBanglaCalendar.dproj"/>
+		</Target>
+		<Target Name="SOBanglaCalendar:Make">
+			<MSBuild Targets="Make" Projects="Metro-Bangla-Calendar\SOBanglaCalendar.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ShadhinOvidhan;SOIntegrator;SOCommon;SO99NamesOfAllah;SOScientificNames;SOAbbreviation;SOGreekLetter;SOGTranslate;Shadhin_Ovidhan_Launcher;SOPortableWizard;SOHelp;SONews;SOFeedback;SOBanglaAidKit;SOBanglaCalendar"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ShadhinOvidhan:Clean;SOIntegrator:Clean;SOCommon:Clean;SO99NamesOfAllah:Clean;SOScientificNames:Clean;SOAbbreviation:Clean;SOGreekLetter:Clean;SOGTranslate:Clean;Shadhin_Ovidhan_Launcher:Clean;SOPortableWizard:Clean;SOHelp:Clean;SONews:Clean;SOFeedback:Clean;SOBanglaAidKit:Clean;SOBanglaCalendar:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ShadhinOvidhan:Make;SOIntegrator:Make;SOCommon:Make;SO99NamesOfAllah:Make;SOScientificNames:Make;SOAbbreviation:Make;SOGreekLetter:Make;SOGTranslate:Make;Shadhin_Ovidhan_Launcher:Make;SOPortableWizard:Make;SOHelp:Make;SONews:Make;SOFeedback:Make;SOBanglaAidKit:Make;SOBanglaCalendar:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

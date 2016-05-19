@@ -1,0 +1,13 @@
+[General]
+Name=ShadhinOvidhan
+Project=1
+[Classes]
+Count=8
+Class0="TfrmDic","TForm","ufrmDic","0","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\ufrmDic.pas"
+Class1="TCustomDBGridCracker","TJvDBGrid","ufrmDic","287","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\ufrmDic.pas"
+Class2="TfrmQSearch","TForm","uFrmQSearch","13","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\uFrmQSearch.pas"
+Class3="TMyRegistry","TRegistry","uRegistry","0","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\Units\uRegistry.pas"
+Class4="TfrmOptions","TForm","uFrmOptions","11","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\uFrmOptions.pas"
+Class5="TfrmWordmarks","TForm","uFrmWordmarks","0","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\uFrmWordmarks.pas"
+Class6="TfrmPopup","TForm","uFrmPopup","0","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\uFrmPopup.pas"
+Class7="TfrmAddModify","TForm","uFrmAddModify","9","H:\Coding Projects\Delphi\Delphi Projects\Shadhin Ovidhan\SourceCode\ShadhinOvidhan\uFrmAddModify.pas"
